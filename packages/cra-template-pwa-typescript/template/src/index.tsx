@@ -19,6 +19,25 @@ root.render(
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.unregister();
 
+// serviceWorkerRegistration.register({
+//   onUpdate: (registration) => {
+//     if (registration && registration.waiting) {
+//       // Modify below to show your stylish update dialog
+//       // for a better user experience.
+//       // Or, move this whole `serviceWorkerRegistration.register`
+//       // piece of code as another component file that always gets rendered (
+//       // refer to or do a global search in github with the keyword `ServiceWorkerWrapper`
+//       // https://github.com/msokolik55/QuestionsDrill-ts-react-pwa/blob/master/src/ServiceWorkerWrapper.tsx
+//       // https://github.com/msokolik55/QuestionsDrill-ts-react-pwa/blob/master/src/index.tsx
+//       // ).
+//       if (window.confirm('New version available!  refresh to update your app?')) {
+//         registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+//         window.location.reload();
+//       }
+//     }
+//   }
+// });
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
